@@ -31,26 +31,6 @@ $throwableHandling->init();
 $app = new \Nuki\Application\Application(new \Pimple\Container());
 
 /**
- * Set the storage driver
- */
-$app::getContainer()->offsetSet('storage-driver', Nuki\Handlers\Core\Assist::getAppStorageDriver());
-
-/**
- * Register service provider
- * with default libraries
- */
-$app::getContainer()->register(new Nuki\Providers\Core\Storage\Base());
-$app::getContainer()->register(new Nuki\Providers\Core\Input\Base());
-$app::getContainer()->register(new Nuki\Providers\Core\Output\Base());
-$app::getContainer()->register(new Nuki\Providers\Core\Helpers\Base());
-$app::getContainer()->register(new Nuki\Providers\Core\Framework\Base());
-
-/**
- * Set helper parameters
- */
-$app->getService('params-handler')->add('app-dir', dirname(getcwd()));
-
-/**
  * Setup routes
  */
 require_once __DIR__ . '/../routes/app.php';
@@ -64,3 +44,4 @@ $app->registerService($router);
  * Return the instantiated application object
  */
 return $app;
+
