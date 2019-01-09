@@ -256,16 +256,16 @@
         },
         {
             "name": "hnto/nuki",
-            "version": "0.1.0",
+            "version": "0.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Hnto/nuki.git",
-                "reference": "35ea90e2643bf3dfb4dbbd90965d7c71c32b97a2"
+                "reference": "c3fb16244e8d611c335a88e3b9c9ee7d81fafc0c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Hnto/nuki/zipball/35ea90e2643bf3dfb4dbbd90965d7c71c32b97a2",
-                "reference": "35ea90e2643bf3dfb4dbbd90965d7c71c32b97a2",
+                "url": "https://api.github.com/repos/Hnto/nuki/zipball/c3fb16244e8d611c335a88e3b9c9ee7d81fafc0c",
+                "reference": "c3fb16244e8d611c335a88e3b9c9ee7d81fafc0c",
                 "shasum": ""
             },
             "require": {
@@ -303,7 +303,7 @@
                 "library",
                 "nuki"
             ],
-            "time": "2018-04-09T10:43:45+00:00"
+            "time": "2018-04-18T11:55:59+00:00"
         },
         {
             "name": "igorw/get-in",
