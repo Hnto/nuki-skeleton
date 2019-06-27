@@ -1,8 +1,6 @@
 <?php
 $renderingJsonFile = getcwd() . '/settings/Rendering/rendering.json';
 
-$appDir = getcwd();
-
 $unit = $argv[1];
 
 if (!is_dir(getcwd() . '/Units')) {
@@ -44,7 +42,7 @@ if (!is_writable($renderingJsonFile)) {
 
 $newFolders = array_merge(
   $renderingRoot['engines'][$default]['folders'], 
-  [$unit => $appDir . '/Units/' . $unit . '/Templates']
+  [$unit => 'Units/' . $unit . '/Templates']
 );
 
 $renderingRoot['engines'][$default]['folders'] = $newFolders;
